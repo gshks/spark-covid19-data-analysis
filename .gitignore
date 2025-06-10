@@ -1,5 +1,42 @@
-*.class
-*.log
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+venv/               
+.env
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# PyCharm specific files
+.idea/             
+*.iml
+*.iws
+*.ipr
+
+# Data files (IMPORTANT: Do NOT commit large datasets or processed data to Git)
+data/                
+*.csv                 
+*.xls                
+*.xlsx                
+*.json
+*.parquet
+*.txt
+*.tsv
+
+# Results and logs
+results/             
+logs/                
+*.log
+*.err
+*.out
+
+# Spark specific files (these are outputs from Spark, regardless of language used for shell)
+spark-events/         
+.spark_history       
+_SUCCESS             
+*.crc             
+.part-*
+# Operating System Files
+.DS_Store             
+Thumbs.db            
+ehthumbs.db           
+Desktop.ini         
